@@ -22,14 +22,16 @@ api = tweepy.API(auth)
 # Get real-time prices
 price = data.get_quote_yahoo(['BTC-USD', 'ETH-USD', 'DOGE-USD', 'CZK=X', 'EURCZK=X'])['price']
 for currency in price:
-    formatted = format(currency, ".3f")
+    formatted = format(int(currency, ".3f"))
+    formatted = format(formatted, ",")
+    print(formatted)
 
 # The actual tweet
-def write_tweet(formatted):
-    api.update_status(status = f"Bitcoin: ${price[0]}\nEthereum: ${price[1]}\nDogecoin: ${price[2]}\n\nDollar: {price[3]} Kč\nEuro: {price[4]} Kč\n\n\nTweet odeslal ton1bot")
+# def write_tweet(formatted):
+#     api.update_status(status = f"Bitcoin: ${price[0]}\nEthereum: ${price[1]}\nDogecoin: ${price[2]}\n\nDollar: {price[3]} Kč\nEuro: {price[4]} Kč\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
 
 # Post the tweet everyday at same time
-schedule.every().day.at("13:34").do(lambda: write_tweet(formatted))
+# schedule.every().day.at("13:43").do(lambda: write_tweet(formatted))
 
 while True:
     schedule.run_pending()
