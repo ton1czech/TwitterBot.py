@@ -2,9 +2,8 @@
 import tweepy
 import pandas_datareader.data as data
 import datetime as dt
-import schedule
 import time
-import re
+import schedule
 
 # Set up Twitter API
 with open('keys.txt') as f:
@@ -22,16 +21,15 @@ api = tweepy.API(auth)
 # Get real-time prices
 price = data.get_quote_yahoo(['BTC-USD', 'ETH-USD', 'DOGE-USD', 'CZK=X', 'EURCZK=X'])['price']
 for currency in price:
-    formatted = format(int(currency, ".3f"))
-    formatted = format(formatted, ",")
-    print(formatted)
+    formatted = format(currency, ".3f")
 
 # The actual tweet
-# def write_tweet(formatted):
-#     api.update_status(status = f"Bitcoin: ${price[0]}\nEthereum: ${price[1]}\nDogecoin: ${price[2]}\n\nDollar: {price[3]} Kč\nEuro: {price[4]} Kč\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+def write_tweet(formatted):
+    api.update_status(status = f"bitcoin: ${price[0]}    #bitcoin\nethereum: ${price[1]}    #ethereum\ndogecoin: ${price[2]}    #dogecoin\n\ndollar: {price[3]} kč    #dollar\neuro: {price[4]} kč    #euro\n\n\ntweet odeslal gingy, zabiják naprogramovanej borcem danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
 
 # Post the tweet everyday at same time
-# schedule.every().day.at("13:43").do(lambda: write_tweet(formatted))
+schedule.every().day.at("12:00").do(lambda: write_tweet(formatted))
+schedule.every().day.at("00:00").do(lambda: write_tweet(formatted))
 
 while True:
     schedule.run_pending()
