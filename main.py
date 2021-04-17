@@ -27,12 +27,8 @@ for currency in price:
 def write_tweet(formatted):
     api.update_status(status = f"bitcoin: ${price[0]}    #bitcoin\nethereum: ${price[1]}    #ethereum\ndogecoin: ${price[2]}    #dogecoin\n\ndollar: {price[3]} kč    #dollar\neuro: {price[4]} kč    #euro\n\n\ntweet odeslal gingy, zabiják naprogramovanej borcem danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
 
-def test_tweet():
-    api.update_status(status = f"heroku deploy test")
-
 # Post the tweet everyday at same time
 schedule.every().day.at("12:00").do(lambda: write_tweet(formatted))
-schedule.every().day.at("21:32").do(test_tweet)
 schedule.every().day.at("00:00").do(lambda: write_tweet(formatted))
 
 while True:
