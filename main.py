@@ -32,7 +32,7 @@ def test_tweet():
 
 # Post the tweet everyday at same time
 schedule.every().day.at("12:00").do(lambda: write_tweet(formatted))
-schedule.every().day.at("21:28").do(test_tweet)
+schedule.every().day.at("21:32").do(test_tweet)
 schedule.every().day.at("00:00").do(lambda: write_tweet(formatted))
 
 while True:
