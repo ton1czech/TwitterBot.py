@@ -1,17 +1,17 @@
 # Import Modules
 import tweepy
 import pandas_datareader.data as data
-import datetime as dt
 from apscheduler.schedulers.blocking import BlockingScheduler
+from os import environ
 
 # Set up Twitter API
 with open('keys.txt') as f:
     content = f.read().splitlines()
 
-consumer_key = content[0]
-consumer_secret = content[1]
-access_token = content[2]
-access_token_secret = content[3]
+consumer_key = environ['consumer_key']
+consumer_secret = environ['consumer_secret']
+access_token = environ['access_token']
+access_token_secret = environ['access_token_secret']
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
