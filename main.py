@@ -21,13 +21,14 @@ api = tweepy.API(auth)
 prices = []
 price = data.get_quote_yahoo(['BTC-USD', 'ETH-USD', 'DOGE-USD', 'CZK=X', 'EURCZK=X'])['price']
 for currency in price:
-    currency = format(currency, ".3f")
+    currency = format(currency, ",.3f")
     prices.append(currency)
 
 # The actual tweet
 def write_tweet(prices):
-    api.update_status(status = f"bitcoin: ${prices[0]}    #bitcoin\nethereum: ${prices[1]}    #ethereum\ndogecoin: ${prices[2]}    #dogecoin\n\ndollar: {prices[3]} kč    #dollar\neuro: {prices[4]} kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nsource code: https://github.com/ton1czech/gingy")
+    api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nsource code: https://github.com/ton1czech/gingy")
 
+# Schedule the process
 sched = BlockingScheduler()
 
 @sched.scheduled_job('cron', hour='0,12')
