@@ -3,9 +3,13 @@ import tweepy
 import pandas_datareader.data as data
 from apscheduler.schedulers.blocking import BlockingScheduler
 from os import environ
+from currencies import get_prices
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Set up Twitter API
-with open('keys.txt') as f:
+with open('../keys.txt') as f:
     content = f.read().splitlines()
 
 consumer_key = environ['consumer_key']
@@ -17,12 +21,8 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
-# Get real-time prices
-prices = []
-price = data.get_quote_yahoo(['BTC-USD', 'ETH-USD', 'DOGE-USD', 'CZK=X', 'EURCZK=X'])['price']
-for currency in price:
-    currency = format(currency, ",.3f")
-    prices.append(currency)
+# Getting different data
+get_prices(data)            # get currencies and their prices
 
 # The actual tweet
 def write_tweet(prices):
