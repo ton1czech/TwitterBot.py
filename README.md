@@ -27,6 +27,7 @@ $ pip install -r requirements.txt
 - **18.04.2021** - _added thousand separator for prices_ - Version: 0.3.8
 - **18.04.2021** - _removed unnecessary lines_ - Version: 0.4.0
 - **21.04.2021** - _making this project multifile_ - Version: 0.5.0
+- `21.04.2021 - STABLE RELEASE - Version: 0.5.0`
 
 ---
 
