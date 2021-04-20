@@ -17,6 +17,18 @@ $ pip install -r requirements.txt
 
 ---
 
+## 📜 **LOG**
+
+- **17.04.2021** - _first line_ - Version: 0.1.0
+- **18.04.2021** - _formmat prices_ - Version: 0.2.0
+- **18.04.2021** - _scheduling via schedule module_ - Version: 0.2.5
+- **18.04.2021** - _added Heroku files_ - Version: 0.3.0
+- **18.04.2021** - _moved from schedule to apscheduler_ - Version: 0.3.5
+- **18.04.2021** - _added thousand separator for prices_ - Version: 0.3.8
+- **18.04.2021** - _removed unnecessary lines_ - Version: 0.4.0
+
+---
+
 ## 📎 **License**
 
 MIT License
