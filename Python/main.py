@@ -1,6 +1,7 @@
 # Import Modules
 import tweepy
 import pandas_datareader.data as data
+import requests
 from apscheduler.schedulers.blocking import BlockingScheduler
 from os import environ
 from currencies import get_prices
