@@ -13,9 +13,6 @@ from history.main import get_history_events
 load_dotenv()
 
 # Set up Twitter API
-with open('../keys.txt') as f:
-    content = f.read().splitlines()
-
 consumer_key = environ['consumer_key']
 consumer_secret = environ['consumer_secret']
 access_token = environ['access_token']
