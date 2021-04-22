@@ -28,6 +28,8 @@ def tweet_currencies(prices):
 def tweet_history_events(title, facts):
     api.update_status(status = f"{title}\n\n{random.choice(facts)}")
 
+tweet_history_events(title, facts)
+
 # Schedule the processes
 sched = BlockingScheduler()
 
