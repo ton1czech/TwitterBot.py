@@ -15,5 +15,6 @@ def get_history_events():
     table = soup.find('div', class_ = 'mainpage-block calendar-container')
     title = table.find('div', class_ = 'mainpage-headline').text
     facts = table.find('ul').text
+    facts = facts.splitlines()
 
 get_history_events()

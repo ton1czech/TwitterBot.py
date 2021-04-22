@@ -1,5 +1,6 @@
 # Import Modules
 import tweepy
+import random
 from apscheduler.schedulers.blocking import BlockingScheduler
 from os import environ
 from dotenv import load_dotenv
@@ -21,13 +22,11 @@ api = tweepy.API(auth)
 
 # The actual currencies tweet
 def tweet_currencies(prices):
-    # api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nsource code: https://github.com/ton1czech/gingy")
-    print(prices)
+    api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nsource code: https://github.com/ton1czech/gingy")
 
 # The actual history tweet
 def tweet_history_events(title, facts):
-    # api.update_status(status = f"{title}\n\n{facts}")
-    print(f"{title}\n\n{facts}")
+    api.update_status(status = f"{title}\n\n{random.choice(facts)}")
 
 # Schedule the processes
 sched = BlockingScheduler()
@@ -38,8 +37,8 @@ def timed_job():
     tweet_currencies(prices)
 
 # Schedule history tweets
-# @sched.scheduled_job('cron', hour='5')
-# def timed_job():
-#     tweet_history_events(title, facts)
+@sched.scheduled_job('cron', hour='5')
+def timed_job():
+    tweet_history_events(title, facts)
 
 sched.start()
