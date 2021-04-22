@@ -20,7 +20,7 @@ $ pip install -r requirements.txt
 ## 📜 **LOG**
 
 - **17.04.2021** - _first line_ - Version: 0.1.0
-- **18.04.2021** - _formmat prices_ - Version: 0.2.0
+- **18.04.2021** - _format prices_ - Version: 0.2.0
 - **18.04.2021** - _scheduling via schedule module_ - Version: 0.2.5
 - **18.04.2021** - _added Heroku files_ - Version: 0.3.0
 - **18.04.2021** - _moved from schedule to apscheduler_ - Version: 0.3.5
@@ -28,6 +28,9 @@ $ pip install -r requirements.txt
 - **18.04.2021** - _removed unnecessary lines_ - Version: 0.4.0
 - **21.04.2021** - _making this project multifile_ - Version: 0.5.0
 - `21.04.2021 - STABLE RELEASE - Version: 0.5.0`
+- **21.04.2021** - _added historical facts_ - Version: 0.5.5
+- **21.04.2021** - _historical facts 100% functional_ - Version: 0.5.8
+- `21.04.2021 - STABLE RELEASE - Version: 0.6.0`
 
 ---
 
