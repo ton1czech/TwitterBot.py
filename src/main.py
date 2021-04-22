@@ -28,19 +28,17 @@ def tweet_currencies(prices):
 def tweet_history_events(title, facts):
     api.update_status(status = f"{title}\n\n{random.choice(facts)}\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nzdroj: https://wikipedia.cz\nsource code: https://github.com/ton1czech/gingy")
 
-tweet_history_events(title, facts)
-
 # Schedule the processes
 sched = BlockingScheduler()
 
 # Schedule currencies tweets
 @sched.scheduled_job('cron', hour='0,12')
-def timed_job():
+def timed_currencies():
     tweet_currencies(prices)
 
 # Schedule history tweets
 @sched.scheduled_job('cron', hour='5')
-def timed_job():
+def timed_history_events():
     tweet_history_events(title, facts)
 
 sched.start()
