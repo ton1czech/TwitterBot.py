@@ -26,7 +26,8 @@ def tweet_currencies(prices):
 
 # The actual history tweet
 def tweet_history_events(title, facts):
-    api.update_status(status = f"{title}\n\n{random.choice(facts)}")
+    # api.update_status(status = f"{title}\n\n{random.choice(facts)}")
+    print(f"{title}\n\n{random.choice(facts)}")
 
 tweet_history_events(title, facts)
 
