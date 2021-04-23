@@ -1,4 +1,5 @@
 # Import modules
+import random
 import requests
 import re
 from bs4 import BeautifulSoup
@@ -16,6 +17,7 @@ def get_history_events():
     soup = BeautifulSoup(r, 'lxml')
 
     table = soup.find('div', class_ = 'mainpage-block calendar-container')
+    print(table)
     title = table.find('div', class_ = 'mainpage-headline').text
     events = table.find('ul').text
     events = events.splitlines()
