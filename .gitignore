@@ -1,3 +1,4 @@
 .env
 /src/currencies/__pycache__
 /src/history/__pycache__
+/src/youtube/__pycache__
