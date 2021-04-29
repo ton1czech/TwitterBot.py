@@ -38,7 +38,7 @@ def timed_currencies():
     tweet_currencies(prices)
 
 # Schedule history tweets
-@sched.scheduled_job('cron', hour='5')
+@sched.scheduled_job('cron', hour='20')
 def timed_history_events():
     tweet_history_events(title, facts)
 
