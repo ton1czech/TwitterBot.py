@@ -147,3 +147,22 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1619728858135	Marionette	WARN	TLS certificate errors will be ignored for this session
 1619728860373	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
 1619728869433	Marionette	INFO	Stopped listening on port 36701
+1619728974347	geckodriver	INFO	Listening on 127.0.0.1:44797
+1619728974350	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZph5tm"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619728974677	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619728976012	Marionette	INFO	Listening on port 44981
+1619728976118	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619728978397	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619728987154	Marionette	INFO	Stopped listening on port 44981
+1619728992302	geckodriver	INFO	Listening on 127.0.0.1:60079
+1619728992308	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVPEsGx"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619728992653	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619728994380	Marionette	INFO	Listening on port 33483
+1619728994444	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619728996559	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: NetworkError: A network error occurred.
+1619729068330	Marionette	INFO	Stopped listening on port 33483
