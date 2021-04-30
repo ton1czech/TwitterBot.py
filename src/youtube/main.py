@@ -1,8 +1,45 @@
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Firefox(executable_path='./geckodriver')
-driver.get("https://www.youtube.com/channel/UCblA_CnykG2Dw_6IMwZ9z9A/videos")
+user_agent = "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0"
+options = webdriver.FirefoxOptions()
+options.headless = True
+options.add_argument(f'user-agent={user_agent}')
+options.add_argument("--window-size=1920,1080")
+options.add_argument('--ignore-certificate-errors')
+options.add_argument('--allow-running-insecure-content')
+options.add_argument("--disable-extensions")
+options.add_argument("--proxy-server='direct://'")
+options.add_argument("--proxy-bypass-list=*")
+options.add_argument("--start-maximized")
+options.add_argument('--disable-gpu')
+options.add_argument('--disable-dev-shm-usage')
+options.add_argument('--no-sandbox')
 
-driver = driver.find_element_by_xpath("/html/body/div/c-wiz/div/div/div/div[2]/div[1]/div[4]/form/div[1]/div/button/div[2]")
-driver.click()
+def get_latest_video():
+    global title, link
+    title = link = None
+
+    driver = webdriver.Firefox(executable_path='./geckodriver')
+    wait = WebDriverWait(driver, 10)
+
+    driver.get("https://www.youtube.com/channel/UCblA_CnykG2Dw_6IMwZ9z9A/videos")
+
+    agreement = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/c-wiz/div/div/div/div[2]/div[1]/div[4]/form/div[1]/div/button/div[2]'))).click()
+    video = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="video-title"]')))
+    title = video.text
+
+    T = open('checker.txt', 'r')
+    latest_title = T.readline()
+
+    if latest_title == title:
+        print("Already Tweeted")
+    else:
+        video.click()
+        link = driver.current_url
+
+get_latest_video()
