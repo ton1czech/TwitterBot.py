@@ -4,3 +4,4 @@
 /src/youtube/__pycache__
 
 /src/youtube/geckodriver.log
+/src/geckodriver.log
