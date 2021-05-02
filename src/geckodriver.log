@@ -896,3 +896,26 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 (/usr/lib/firefox/firefox:109902): GLib-GObject-CRITICAL **: 18:00:07.312: g_object_set: assertion 'G_IS_OBJECT (object)' failed
 1619971209206	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619972688918	geckodriver	INFO	Listening on 127.0.0.1:35841
+1619972689923	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileg25soU"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619972690272	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:123468): GLib-GObject-CRITICAL **: 18:24:50.709: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:123486): GLib-GObject-CRITICAL **: 18:24:50.784: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:123524): GLib-GObject-CRITICAL **: 18:24:51.061: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619972691685	Marionette	INFO	Listening on port 46845
+
+(/usr/lib/firefox/firefox:123592): GLib-GObject-CRITICAL **: 18:24:51.745: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619972691757	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+(/usr/lib/firefox/firefox:123651): GLib-GObject-CRITICAL **: 18:24:53.628: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619972694652	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.

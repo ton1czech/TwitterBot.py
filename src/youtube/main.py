@@ -24,7 +24,9 @@ def get_youtube_video():
     global title, link
     title = link = None
 
-    driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
+    local_path = './youtube/geckodriver'
+    heroku_path = '/app/vendor/geckodriver/geckodriver'
+    driver = webdriver.Firefox(executable_path=local_path, options=options)
     wait = WebDriverWait(driver, 10)
 
     driver.get("https://www.youtube.com/channel/UCblA_CnykG2Dw_6IMwZ9z9A/videos")
@@ -43,11 +45,6 @@ def get_youtube_video():
     else:
         update_checker = open('./youtube/checker.txt', 'w')
         update_checker.write(title)
-
-        # if not latest_title:
-        #     update_checker.write(title)
-        # else:
-        #     update_checker.write(f"\n{title}")
 
         video.click()
         link = driver.current_url
