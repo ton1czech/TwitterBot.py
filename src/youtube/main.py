@@ -21,12 +21,16 @@ options.add_argument('--disable-dev-shm-usage')
 options.add_argument('--no-sandbox')
 
 def get_youtube_video():
+    try:
+        driver = webdriver.Firefox(executable_path='/app/vendor/geckodriver/geckodriver', options=options)
+        open_browser(driver)
+    except:
+        driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
+        open_browser(driver)
+
+def open_browser(driver):
     global title, link
     title = link = None
-
-    local_path = './youtube/geckodriver'
-    heroku_path = '/app/vendor/geckodriver/geckodriver'
-    driver = webdriver.Firefox(executable_path=local_path, options=options)
     wait = WebDriverWait(driver, 10)
 
     driver.get("https://www.youtube.com/channel/UCblA_CnykG2Dw_6IMwZ9z9A/videos")

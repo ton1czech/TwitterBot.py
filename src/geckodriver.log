@@ -919,3 +919,414 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 (/usr/lib/firefox/firefox:123651): GLib-GObject-CRITICAL **: 18:24:53.628: g_object_set: assertion 'G_IS_OBJECT (object)' failed
 1619972694652	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619981129359	geckodriver	INFO	Listening on 127.0.0.1:56511
+1619981130356	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerTHBiQ"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981130925	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:3740): GLib-GObject-CRITICAL **: 20:45:31.366: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:3756): GLib-GObject-CRITICAL **: 20:45:31.476: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:3794): GLib-GObject-CRITICAL **: 20:45:31.731: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981132420	Marionette	INFO	Listening on port 33717
+1619981132487	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:3861): GLib-GObject-CRITICAL **: 20:45:32.502: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+(/usr/lib/firefox/firefox:3920): GLib-GObject-CRITICAL **: 20:45:34.385: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981134976	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1619981512739	geckodriver	INFO	Listening on 127.0.0.1:39125
+1619981512743	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecKk3Y5"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981513054	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:7403): GLib-GObject-CRITICAL **: 20:51:53.460: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:7421): GLib-GObject-CRITICAL **: 20:51:53.514: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:7459): GLib-GObject-CRITICAL **: 20:51:53.787: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981514463	Marionette	INFO	Listening on port 43205
+
+(/usr/lib/firefox/firefox:7542): GLib-GObject-CRITICAL **: 20:51:54.513: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981514574	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+(/usr/lib/firefox/firefox:7598): GLib-GObject-CRITICAL **: 20:51:56.156: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981518029	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1619981649293	geckodriver	INFO	Listening on 127.0.0.1:59245
+1619981650298	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTj8PgY"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981650668	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:9088): GLib-GObject-CRITICAL **: 20:54:11.107: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:9104): GLib-GObject-CRITICAL **: 20:54:11.213: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:9139): GLib-GObject-CRITICAL **: 20:54:11.514: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981700012	geckodriver	INFO	Listening on 127.0.0.1:40039
+1619981700015	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZaosJc"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981700355	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619981702025	Marionette	INFO	Listening on port 43821
+1619981702147	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619981709573	Marionette	INFO	Stopped listening on port 43821
+1619981749624	geckodriver	INFO	Listening on 127.0.0.1:36391
+1619981750628	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqH381K"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981751032	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619981752636	Marionette	INFO	Listening on port 33201
+1619981752746	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619981754921	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619981756501	Marionette	INFO	Stopped listening on port 33201
+1619981804493	geckodriver	INFO	Listening on 127.0.0.1:45487
+1619981804496	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyc4qbU"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981804834	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619981806336	Marionette	INFO	Listening on port 37901
+1619981806424	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619981808593	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619981810289	Marionette	INFO	Stopped listening on port 37901
+1619981882593	geckodriver	INFO	Listening on 127.0.0.1:53441
+1619981882596	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8o2ID3"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981882907	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:12499): GLib-GObject-CRITICAL **: 20:58:03.281: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:12517): GLib-GObject-CRITICAL **: 20:58:03.368: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:12555): GLib-GObject-CRITICAL **: 20:58:03.628: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981884297	Marionette	INFO	Listening on port 37565
+1619981884331	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:12623): GLib-GObject-CRITICAL **: 20:58:04.350: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+(/usr/lib/firefox/firefox:12680): GLib-GObject-CRITICAL **: 20:58:05.925: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981887561	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619981914503	geckodriver	INFO	Listening on 127.0.0.1:34211
+1619981915507	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelzmgzd"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981915862	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:13255): GLib-GObject-CRITICAL **: 20:58:36.310: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13271): GLib-GObject-CRITICAL **: 20:58:36.377: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:13309): GLib-GObject-CRITICAL **: 20:58:36.603: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981917298	Marionette	INFO	Listening on port 36973
+1619981917330	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:13380): GLib-GObject-CRITICAL **: 20:58:37.358: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+(/usr/lib/firefox/firefox:13432): GLib-GObject-CRITICAL **: 20:58:38.859: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981919592	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619981994454	geckodriver	INFO	Listening on 127.0.0.1:38253
+1619981995459	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9PFBNf"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619981995806	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:14397): GLib-GObject-CRITICAL **: 20:59:56.195: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:14413): GLib-GObject-CRITICAL **: 20:59:56.303: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:14452): GLib-GObject-CRITICAL **: 20:59:56.545: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619981997349	Marionette	INFO	Listening on port 36535
+1619981997384	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:14519): GLib-GObject-CRITICAL **: 20:59:57.414: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+(/usr/lib/firefox/firefox:14576): GLib-GObject-CRITICAL **: 20:59:59.046: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982000729	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619982062006	geckodriver	INFO	Listening on 127.0.0.1:53373
+1619982062009	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAgo3gY"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982062316	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:15424): GLib-GObject-CRITICAL **: 21:01:02.712: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:15442): GLib-GObject-CRITICAL **: 21:01:02.792: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:15480): GLib-GObject-CRITICAL **: 21:01:03.101: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982064054	Marionette	INFO	Listening on port 42877
+
+(/usr/lib/firefox/firefox:15570): GLib-GObject-CRITICAL **: 21:01:04.117: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982064135	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1619982085979	geckodriver	INFO	Listening on 127.0.0.1:39509
+1619982085983	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9Zxg8P"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982086296	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:16051): GLib-GObject-CRITICAL **: 21:01:26.708: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:16069): GLib-GObject-CRITICAL **: 21:01:26.811: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:16106): GLib-GObject-CRITICAL **: 21:01:27.040: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982087864	Marionette	INFO	Listening on port 36243
+1619982087905	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:16178): GLib-GObject-CRITICAL **: 21:01:27.914: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+(/usr/lib/firefox/firefox:16231): GLib-GObject-CRITICAL **: 21:01:29.453: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982090306	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619982166581	geckodriver	INFO	Listening on 127.0.0.1:34273
+1619982166584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewUrrxw"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982166924	Marionette	INFO	Marionette enabled
+1619982190856	geckodriver	INFO	Listening on 127.0.0.1:37891
+1619982190859	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileN5rXFu"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982191182	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619982192829	Marionette	INFO	Listening on port 39941
+1619982192880	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619982195860	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619982196559	Marionette	INFO	Stopped listening on port 39941
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: https://www.youtube.com/s/desktop/3a84d4c0/jsbin/scheduler.vflset/scheduler.js, line 36: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.youtube.com/s/desktop/3a84d4c0/jsbin/scheduler.vflset/scheduler.js, line 36: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619982222180	geckodriver	INFO	Listening on 127.0.0.1:55347
+1619982222183	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaX9E0X"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982222518	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619982224182	Marionette	INFO	Listening on port 35869
+1619982224215	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619982226510	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619982228052	Marionette	INFO	Stopped listening on port 35869
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: https://www.youtube.com/s/desktop/3a84d4c0/jsbin/scheduler.vflset/scheduler.js, line 36: NS_ERROR_NOT_INITIALIZED: 
+1619982302926	geckodriver	INFO	Listening on 127.0.0.1:39883
+1619982302929	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9pNFF1"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982303274	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619982304995	Marionette	INFO	Listening on port 42861
+1619982305062	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619982307239	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619982308569	Marionette	INFO	Stopped listening on port 42861
+1619982511078	geckodriver	INFO	Listening on 127.0.0.1:38167
+1619982511081	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileksxCuz"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982511517	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619982513449	Marionette	INFO	Listening on port 44289
+1619982513515	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619982515960	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619982518103	Marionette	INFO	Stopped listening on port 44289
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619982528583	geckodriver	INFO	Listening on 127.0.0.1:43905
+1619982528586	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegEfu6K"
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982528925	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619982530507	Marionette	INFO	Listening on port 36099
+1619982530614	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619982533657	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619982533956	Marionette	INFO	Stopped listening on port 36099
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619982607356	geckodriver	INFO	Listening on 127.0.0.1:53647
+1619982607359	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDbpkgg"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982607681	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:23452): GLib-GObject-CRITICAL **: 21:10:08.073: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:23468): GLib-GObject-CRITICAL **: 21:10:08.132: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:23509): GLib-GObject-CRITICAL **: 21:10:08.398: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982609190	Marionette	INFO	Listening on port 41815
+
+(/usr/lib/firefox/firefox:23573): GLib-GObject-CRITICAL **: 21:10:09.256: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982609280	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+(/usr/lib/firefox/firefox:23634): GLib-GObject-CRITICAL **: 21:10:10.854: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982612717	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1619982629338	geckodriver	INFO	Listening on 127.0.0.1:45847
+1619982629340	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0" "--window-size=1920,1080" "--ignore-certificate-errors" "--allow-running-insecure-content" "--disable-extensions" "--proxy-server=\'direct://\'" "--proxy-bypass-list=*" "--start-maximized" "--disable-gpu" "--disable-dev-shm-usage" "--no-sandbox" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLVWTB8"
+*** You are running in headless mode.
+[GFX1-]: More than 1 GPU from same vendor detected via PCI, cannot deduce device
+1619982629640	Marionette	INFO	Marionette enabled
+
+(/usr/lib/firefox/firefox:23936): GLib-GObject-CRITICAL **: 21:10:30.053: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:23952): GLib-GObject-CRITICAL **: 21:10:30.129: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:23990): GLib-GObject-CRITICAL **: 21:10:30.389: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982631057	Marionette	INFO	Listening on port 35307
+
+(/usr/lib/firefox/firefox:24072): GLib-GObject-CRITICAL **: 21:10:31.113: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1619982631158	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:24106): GLib-GObject-CRITICAL **: 21:10:31.745: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1619982634507	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
