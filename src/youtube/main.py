@@ -20,11 +20,11 @@ options.add_argument('--disable-gpu')
 options.add_argument('--disable-dev-shm-usage')
 options.add_argument('--no-sandbox')
 
-def get_latest_video():
+def get_youtube_video():
     global title, link
     title = link = None
 
-    driver = webdriver.Firefox(executable_path='./geckodriver')
+    driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
     wait = WebDriverWait(driver, 10)
 
     driver.get("https://www.youtube.com/channel/UCblA_CnykG2Dw_6IMwZ9z9A/videos")
@@ -33,13 +33,24 @@ def get_latest_video():
     video = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="video-title"]')))
     title = video.text
 
-    T = open('checker.txt', 'r')
-    latest_title = T.readline()
+    read_checker = open('./youtube/checker.txt', 'r')
+    latest_title = read_checker.readline()
 
     if latest_title == title:
-        print("Already Tweeted")
+        driver.close()
+        title = link = None
+        return
     else:
+        update_checker = open('./youtube/checker.txt', 'w')
+        update_checker.write(title)
+
+        # if not latest_title:
+        #     update_checker.write(title)
+        # else:
+        #     update_checker.write(f"\n{title}")
+
         video.click()
         link = driver.current_url
+        driver.close()
 
-get_latest_video()
+get_youtube_video()
