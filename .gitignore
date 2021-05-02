@@ -2,4 +2,5 @@
 /src/currencies/__pycache__
 /src/history/__pycache__
 /src/youtube/__pycache__
+
 /src/youtube/geckodriver.log
