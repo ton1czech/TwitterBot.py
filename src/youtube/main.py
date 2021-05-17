@@ -22,7 +22,7 @@ options.add_argument('--disable-dev-shm-usage')
 options.add_argument('--no-sandbox')
 
 chrome_options = webdriver.ChromeOptions()
-chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+chrome_options.binary_location = "GOOGLE_CHROME_BIN"
 chrome_options.add_argument("--headless")
 chrome_options.add_argument(f'user-agent={user_agent}')
 chrome_options.add_argument("--window-size=1920,1080")
@@ -38,7 +38,7 @@ chrome_options.add_argument('--no-sandbox')
 
 def get_youtube_video():
     try:
-        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
+        driver = webdriver.Chrome(executable_path="CHROMEDRIVER_PATH", chrome_options=chrome_options)
         open_browser(driver)
     except:
         driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
