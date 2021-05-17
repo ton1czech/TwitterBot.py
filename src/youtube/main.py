@@ -22,7 +22,7 @@ options.add_argument('--no-sandbox')
 
 def get_youtube_video():
     try:
-        driver = webdriver.Firefox(executable_path='/app/vendor/geckodriver/geckodriver', options=options)
+        driver = webdriver.Firefox(executable_path='/app/vendor/', options=options)
         open_browser(driver)
     except:
         driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
