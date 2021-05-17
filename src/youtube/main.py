@@ -7,9 +7,8 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 
 user_agent = "Mozilla/5.0 (X11; Linux x86_64; rv:88.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
-options = webdriver.ChromeOptions()
+options = webdriver.FirefoxOptions()
 options.headless = True
-options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 options.add_argument(f'user-agent={user_agent}')
 options.add_argument("--window-size=1920,1080")
 options.add_argument('--ignore-certificate-errors')
@@ -22,9 +21,24 @@ options.add_argument('--disable-gpu')
 options.add_argument('--disable-dev-shm-usage')
 options.add_argument('--no-sandbox')
 
+chrome_options = webdriver.ChromeOptions()
+chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+chrome_options.add_argument("--headless")
+chrome_options.add_argument(f'user-agent={user_agent}')
+chrome_options.add_argument("--window-size=1920,1080")
+chrome_options.add_argument('--ignore-certificate-errors')
+chrome_options.add_argument('--allow-running-insecure-content')
+chrome_options.add_argument("--disable-extensions")
+chrome_options.add_argument("--proxy-server='direct://'")
+chrome_options.add_argument("--proxy-bypass-list=*")
+chrome_options.add_argument("--start-maximized")
+chrome_options.add_argument('--disable-gpu')
+chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options.add_argument('--no-sandbox')
+
 def get_youtube_video():
     try:
-        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
+        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
         open_browser(driver)
     except:
         driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
