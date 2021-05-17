@@ -1,3 +1,4 @@
+import os
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -5,9 +6,10 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 
-user_agent = "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0"
-options = webdriver.FirefoxOptions()
+user_agent = "Mozilla/5.0 (X11; Linux x86_64; rv:88.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+options = webdriver.ChromeOptions()
 options.headless = True
+options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 options.add_argument(f'user-agent={user_agent}')
 options.add_argument("--window-size=1920,1080")
 options.add_argument('--ignore-certificate-errors')
@@ -22,7 +24,7 @@ options.add_argument('--no-sandbox')
 
 def get_youtube_video():
     try:
-        driver = webdriver.Firefox(executable_path='/app/vendor/', options=options)
+        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
         open_browser(driver)
     except:
         driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
