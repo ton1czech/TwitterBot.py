@@ -1,4 +1,3 @@
-import os
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -7,19 +6,19 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 
 user_agent = "Mozilla/5.0 (X11; Linux x86_64; rv:88.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
-options = webdriver.FirefoxOptions()
-options.headless = True
-options.add_argument(f'user-agent={user_agent}')
-options.add_argument("--window-size=1920,1080")
-options.add_argument('--ignore-certificate-errors')
-options.add_argument('--allow-running-insecure-content')
-options.add_argument("--disable-extensions")
-options.add_argument("--proxy-server='direct://'")
-options.add_argument("--proxy-bypass-list=*")
-options.add_argument("--start-maximized")
-options.add_argument('--disable-gpu')
-options.add_argument('--disable-dev-shm-usage')
-options.add_argument('--no-sandbox')
+# options = webdriver.FirefoxOptions()
+# options.headless = True
+# options.add_argument(f'user-agent={user_agent}')
+# options.add_argument("--window-size=1920,1080")
+# options.add_argument('--ignore-certificate-errors')
+# options.add_argument('--allow-running-insecure-content')
+# options.add_argument("--disable-extensions")
+# options.add_argument("--proxy-server='direct://'")
+# options.add_argument("--proxy-bypass-list=*")
+# options.add_argument("--start-maximized")
+# options.add_argument('--disable-gpu')
+# options.add_argument('--disable-dev-shm-usage')
+# options.add_argument('--no-sandbox')
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = "GOOGLE_CHROME_BIN"
@@ -37,12 +36,12 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument('--no-sandbox')
 
 def get_youtube_video():
-    try:
-        driver = webdriver.Chrome(executable_path="CHROMEDRIVER_PATH", chrome_options=chrome_options)
-        open_browser(driver)
-    except:
-        driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
-        open_browser(driver)
+    # try:
+    driver = webdriver.Chrome(executable_path="CHROMEDRIVER_PATH", chrome_options=chrome_options)
+    open_browser(driver)
+    # except:
+    #     driver = webdriver.Firefox(executable_path='./youtube/geckodriver', options=options)
+    #     open_browser(driver)
 
 def open_browser(driver):
     global title, link
