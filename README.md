@@ -11,9 +11,29 @@ $ pip install -r requirements.txt
 
 ## 💭 **Description**
 
+Python bot to make your Twitter account more active and informative. <br />
+<br />
+Gingy tweets:
+
+- cryptocurrency prices (BTC, ETH, DOGE)
+- currency prices (USD -> CZK, EUR -> CZK)
+- historical event
+- new youtube video
+
 ---
 
 ## ✏ **How To Use**
+
+1. Clone the repository
+
+```
+git clone https://github.com/ton1czech/gingy
+```
+
+2. Setup Twitter developer account (https://developer.twitter.com/en)
+3. Make .env file inside root dir and fill out Twitter credentials
+4. Change YouTube URL to your's channel URL.
+5. Host the application on Heroku.
 
 ---
 
