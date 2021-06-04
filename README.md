@@ -1,4 +1,4 @@
-# 🎂 gingy 🎂
+# 🎂 gingy 🎂 [<img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg">](https://mit-license.org/) [<img alt="Python Version" src="https://img.shields.io/pypi/pyversions/pytube">](https://www.python.org/)
 
 ## 💻 **Installation**
 
@@ -15,10 +15,11 @@ Python bot to make your Twitter account more active and informative. <br />
 <br />
 Gingy tweets:
 
-- cryptocurrency prices (BTC, ETH, DOGE)
-- currency prices (USD -> CZK, EUR -> CZK)
-- historical event
-- new youtube video
+<table><tr>
+    <td><h1 style="text-align: center;">currency prices (BTC, ETH, DOGE)</h1><img alt="Crypto" src="https://i.imgur.com/9Sto0z6.png" width="380px"></td>
+    <td><h1 style="text-align: center;">historical events</h1><img alt="Crypto" src="https://i.imgur.com/u5vkDE2.png" width="380px"></td>
+    <td><h1 style="text-align: center;">new youtube video</h1><img alt="Crypto" src="https://i.imgur.com/u5vkDE2.png" width="380px"></td>
+</tr></table>
 
 ---
 
