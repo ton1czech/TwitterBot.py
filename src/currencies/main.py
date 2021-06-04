@@ -1,7 +1,7 @@
 # Import modules
 import pandas_datareader.data as data
 
-# Get real-time prices
+# Get real-time prices of currencies
 prices = []
 
 def get_prices():

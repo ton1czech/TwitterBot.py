@@ -25,19 +25,19 @@ api = tweepy.API(auth)
 
 
 
-### ACUTAL TWEETS ###
-# The actual currencies tweet
+### ACTUAL TWEETS ###
+# Currencies
 def tweet_currencies(prices):
     api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
-# The actual history tweet
+# History
 def tweet_history_events(title, facts):
     fact = random.choice(facts)
     api.update_status(status = f"{title}\n\n{fact}\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nzdroj: https://wikipedia.cz\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
-# The actual YouTube video tweet
+# Latest YouTube video
 def tweet_youtube_video(title, link):
     if title == None or link == None:
         sys.exit()
@@ -50,17 +50,17 @@ def tweet_youtube_video(title, link):
 ### SCHEDULER ###
 sched = BlockingScheduler()
 
-# Schedule currencies tweets
+# Currencies tweets
 @sched.scheduled_job('cron', hour='0,12')
 def timed_currencies():
     tweet_currencies(prices)
 
-# Schedule history tweets
+# History tweets
 @sched.scheduled_job('cron', hour='20')
 def timed_history_events():
     tweet_history_events(title, facts)
 
-# Schedule youtube tweets
+# YouTube tweets
 @sched.scheduled_job('cron', hour='15')
 def timed_youtube_video():
     tweet_youtube_video(title, link)

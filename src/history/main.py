@@ -3,7 +3,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-# Get events from today's date in history
+# Get events of today's date from history
 def get_history_events():
     global title, facts
     title = None
