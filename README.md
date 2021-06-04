@@ -1,14 +1,5 @@
 # 🎂 gingy 🎂 [<img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg">](https://mit-license.org/) [<img alt="Python Version" src="https://img.shields.io/pypi/pyversions/pytube">](https://www.python.org/)
 
-## 💻 **Installation**
-
-```console
-# Install pip modules
-$ pip install -r requirements.txt
-```
-
----
-
 ## 💭 **Description**
 
 Python bot to make your Twitter account more active and informative. <br />
@@ -16,7 +7,7 @@ Python bot to make your Twitter account more active and informative. <br />
 Gingy tweets:
 
 <table><tr>
-    <td><h1 style="text-align: center;">currency prices (BTC, ETH, DOGE)</h1><img alt="Crypto" src="https://i.imgur.com/9Sto0z6.png" width="380px"></td>
+    <td><h1 style="text-align: center;">currency prices</h1><img alt="Crypto" src="https://i.imgur.com/9Sto0z6.png" width="380px"></td>
     <td><h1 style="text-align: center;">historical events</h1><img alt="Crypto" src="https://i.imgur.com/u5vkDE2.png" width="380px"></td>
     <td><h1 style="text-align: center;">new youtube video</h1><img alt="Crypto" src="https://i.imgur.com/u5vkDE2.png" width="380px"></td>
 </tr></table>
@@ -25,16 +16,25 @@ Gingy tweets:
 
 ## ✏ **How To Use**
 
-1. Clone the repository
+Step 1: Clone the repository
 
 ```
-git clone https://github.com/ton1czech/gingy
+$ git clone https://github.com/ton1czech/gingy
 ```
 
-2. Setup Twitter developer account (https://developer.twitter.com/en)
-3. Make .env file inside root dir and fill out Twitter credentials
-4. Change YouTube URL to your's channel URL.
-5. Host the application on Heroku.
+Step 2: Install dependancies
+
+```
+$ pip install -r requirements.txt
+```
+
+Step 3: Setup [Twitter developer](https://developer.twitter.com/en) account
+
+Step 4: Make .env file inside root dir and fill out Twitter credentials (like in .env.example)
+
+Step 5: Change YouTube URL to your's channel URL.
+
+Step 6: Host the application on Heroku.
 
 ---
 
