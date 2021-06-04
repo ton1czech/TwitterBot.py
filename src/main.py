@@ -7,9 +7,9 @@ from os import environ
 from dotenv import load_dotenv
 
 ### IMPORT TASKS ###
-from currencies.main import get_prices, prices
-from history.main import get_history_events, title, facts
-from youtube.main import get_youtube_video, title, link
+from currencies.main import prices
+from history.main import title, facts
+from youtube.main import title, link
 
 load_dotenv()
 
