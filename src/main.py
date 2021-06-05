@@ -7,9 +7,10 @@ from os import environ
 from dotenv import load_dotenv
 
 ### IMPORT TASKS ###
-from currencies.main import prices
-from history.main import title, facts
-from youtube.main import title, link
+from currencies.main import get_prices, prices
+from history.main import get_history_events, title, facts
+from youtube.main import get_youtube_video, title, link
+from weather.main import get_weather, emoji, date, temp, state
 
 load_dotenv()
 
@@ -45,6 +46,11 @@ def tweet_youtube_video(title, link):
         api.update_status(status = f"Nové video na YouTube! 😍\n\n{title}\n{link}\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
         sys.exit()
 
+# Weather
+def tweet_weather(emoji, date, temp, state):
+    api.update_status(status = f"{date[0]} -> {temp[0]}°C ({state[0]} {emoji}\n{date[3]} -> {temp[3]}°C ({state[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({state[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({state[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({state[15]} {emoji})")
+    sys.exit()
+
 
 
 ### SCHEDULER ###
@@ -53,16 +59,25 @@ sched = BlockingScheduler()
 # Currencies tweets
 @sched.scheduled_job('cron', hour='0,12')
 def timed_currencies():
+    get_prices()
     tweet_currencies(prices)
 
 # History tweets
 @sched.scheduled_job('cron', hour='20')
 def timed_history_events():
+    get_history_events()
     tweet_history_events(title, facts)
 
 # YouTube tweets
 @sched.scheduled_job('cron', hour='15')
 def timed_youtube_video():
+    get_youtube_video()
     tweet_youtube_video(title, link)
+
+# Weather
+@sched.scheduled_job('cron', hour='5')
+def timed_weather():
+    get_weather()
+    tweet_weather(title, link)
 
 sched.start()
