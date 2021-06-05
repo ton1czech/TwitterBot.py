@@ -14,11 +14,17 @@ lang = 'cz'
 
 # Get weather forecast in Klatovy for today
 def get_weather():
+    global date, temp, state
+    date, temp, state = [], [], []
+
     url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={drop}&units={units}&lang={lang}&appid={environ['API_key']}"
     weather = requests.get(url).json()
 
-    date = datetime.fromtimestamp(weather['hourly'][0]['dt']).strftime("%H")
-    temp = weather['hourly'][0]['temp']
-    state = weather['hourly'][0]['weather'][0]['description']
+    for id in range(0,20):
+        date.append(datetime.fromtimestamp(weather['hourly'][id]['dt']).strftime("%H:%M"))
+        temp.append(weather['hourly'][id]['temp'])
+        state.append(weather['hourly'][id]['weather'][0]['description'])
+
+    print(f"{date[0]}\n{temp[0]}°C\n{state[0]}")
 
 get_weather()
