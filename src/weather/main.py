@@ -12,14 +12,17 @@ lat = 49.395555
 lon = 13.295094
 drop = 'current,minutely,daily,alerts'
 units = 'metric'
+lang = 'cz'
 
 # Get weather forecast in Klatovy for today
 def get_weather():
-    url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={drop}&units={units}&appid={environ['API_key']}"
+    url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={drop}&units={units}&lang={lang}&appid={environ['API_key']}"
     weather = requests.get(url).json()
 
     date = weather['hourly'][0]['dt']
     date = datetime.fromtimestamp(date).strftime("%H")
-    print(date)
+
+    temp = weather['hourly'][0]['temp']
+    print(temp)
 
 get_weather()
