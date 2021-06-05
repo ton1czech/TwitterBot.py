@@ -24,7 +24,6 @@ def get_weather():
         date.append(datetime.fromtimestamp(weather['hourly'][id]['dt']).strftime("%H:%M"))
         temp.append(weather['hourly'][id]['temp'])
         state.append(weather['hourly'][id]['weather'][0]['description'])
-    print(state)
     
     # emoji generator
     st = weather['hourly'][id]['weather'][0]['description']
@@ -36,7 +35,5 @@ def get_weather():
         emoji == '☁'
     else:
         emoji = '❓'
-
-    print(f"{date[0]}\n{temp[0]}°C\n{state[0]}")
 
 get_weather()
