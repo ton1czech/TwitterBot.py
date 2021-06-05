@@ -15,8 +15,11 @@ def get_youtube_video():
 
     try:
         read_checker = open('src/youtube/checker.txt', 'r')
-    except:
+    except FileNotFoundError:
+        read_checker = open('youtube/checker.txt', 'r')
+    except FileNotFoundError:
         read_checker = open('checker.txt', 'r')
+
     latest_title = read_checker.readline()
 
     if latest_title == title:
