@@ -62,7 +62,7 @@ def tweet_weather(emoji, date, temp, forecast):
     if date == None or temp == None or forecast == None:
         pass
     else:
-        api.update_status(status = f"{date[0]} -> {temp[0]}°C ({forecast[0]} {emoji})\n{date[3]} -> {temp[3]}°C ({forecast[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({forecast[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({forecast[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({forecast[15]} {emoji})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+        api.update_status(status = f"KLATOVY:\n\n{date[1]} -> {temp[1]}°C ({forecast[1]} {emoji[1]})\n{date[7]} -> {temp[7]}°C ({forecast[7]} {emoji[7]})\n{date[11]} -> {temp[11]}°C ({forecast[11]} {emoji[11]})\n{date[15]} -> {temp[15]}°C ({forecast[15]} {emoji[15]})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
 
