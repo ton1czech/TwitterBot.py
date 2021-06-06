@@ -8,8 +8,8 @@ from os import environ
 from dotenv import load_dotenv
 
 ### IMPORT TASKS ###
-from currencies.main import *
-# from history.main import title, facts
+from currencies.main import fetch_currencies
+from history.main import fetch_history
 # from youtube.main import title, link
 # from weather.main import emoji, date, temp, state
 
@@ -33,12 +33,11 @@ def tweet_currencies(prices):
     if prices == None:
         pass
     else:
-        # api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
-        print(f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+        api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
 # History
-def tweet_history_events(title, facts):
+def tweet_history(title, facts):
     if title == None or facts == None:
         pass
     else:
@@ -65,27 +64,28 @@ def tweet_weather(emoji, date, temp, state):
 
 
 ### SCHEDULER ###
-sched = BlockingScheduler()
+# sched = BlockingScheduler()
 
-# Currencies tweets
-@sched.scheduled_job('cron', hour='0,12')
-def schedule_currencies():
-    prices = fetch_currencies()
-    tweet_currencies(prices)
+# # Currencies
+# @sched.scheduled_job('cron', hour='0,12')
+# def schedule_currencies():
+#     prices = fetch_currencies()
+#     tweet_currencies(prices)
 
-# History tweets
-@sched.scheduled_job('cron', hour='20')
-def timed_history_events():
-    tweet_history_events(title, facts)
+# # History
+# @sched.scheduled_job('cron', hour='20')
+# def schedule_history():
+#     title, facts = fetch_history()
+#     tweet_history(title, facts)
 
-# YouTube tweets
-@sched.scheduled_job('cron', hour='15')
-def timed_youtube_video():
-    tweet_youtube_video(title, link)
+# # YouTube
+# @sched.scheduled_job('cron', hour='15')
+# def timed_youtube_video():
+#     tweet_youtube_video(title, link)
 
-# Weather
-@sched.scheduled_job('cron', hour='5')
-def timed_weather():
-    tweet_weather(emoji, date, temp, state)
+# # Weather
+# @sched.scheduled_job('cron', hour='5')
+# def timed_weather():
+#     tweet_weather(emoji, date, temp, state)
 
-sched.start()
+# sched.start()

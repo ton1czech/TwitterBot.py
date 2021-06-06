@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 
 # Get events of today's date from history
-def get_history_events():
+def fetch_history():
     global title, facts
     title = None
     facts = []
@@ -23,5 +23,5 @@ def get_history_events():
         event = re.sub('\(.+\)', '', event)
         event = re.sub('\s\.', '.', event)
         facts.append(event)
-
-get_history_events()
+    
+    return title, facts
