@@ -1,16 +1,17 @@
 ### IMPORT MODULES ###
 import tweepy
 import random
+import time
 import sys
 from apscheduler.schedulers.blocking import BlockingScheduler
 from os import environ
 from dotenv import load_dotenv
 
 ### IMPORT TASKS ###
-from currencies.main import prices
-from history.main import title, facts
-from youtube.main import title, link
-from weather.main import emoji, date, temp, state
+from currencies.main import *
+# from history.main import title, facts
+# from youtube.main import title, link
+# from weather.main import emoji, date, temp, state
 
 load_dotenv()
 
@@ -32,7 +33,8 @@ def tweet_currencies(prices):
     if prices == None:
         pass
     else:
-        api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+        # api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+        print(f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
 # History
@@ -57,15 +59,18 @@ def tweet_weather(emoji, date, temp, state):
     if date == None or temp == None or state == None:
         pass
     else:
-        api.update_status(status = f"{date[0]} -> {temp[0]}°C ({state[0]} {emoji})\n{date[3]} -> {temp[3]}°C ({state[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({state[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({state[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({state[15]} {emoji})")
+        api.update_status(status = f"{date[0]} -> {temp[0]}°C ({state[0]} {emoji})\n{date[3]} -> {temp[3]}°C ({state[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({state[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({state[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({state[15]} {emoji})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
+
+
 
 ### SCHEDULER ###
 sched = BlockingScheduler()
 
 # Currencies tweets
 @sched.scheduled_job('cron', hour='0,12')
-def timed_currencies():
+def schedule_currencies():
+    prices = fetch_currencies()
     tweet_currencies(prices)
 
 # History tweets
