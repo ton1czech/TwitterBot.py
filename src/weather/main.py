@@ -13,9 +13,9 @@ units = 'metric'
 lang = 'cz'
 
 # Get weather forecast in Klatovy for today
-def get_weather():
-    global emoji, date, temp, state
-    emoji, date, temp, state = '', [], [], []
+def fetch_weather():
+    global emoji, date, temp, forecast
+    emoji, date, temp, forecast = '', [], [], []
 
     url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={drop}&units={units}&lang={lang}&appid={environ['API_key']}"
     weather = requests.get(url).json()
@@ -23,7 +23,7 @@ def get_weather():
     for id in range(0,20):
         date.append(datetime.fromtimestamp(weather['hourly'][id]['dt']).strftime("%H:%M"))
         temp.append(weather['hourly'][id]['temp'])
-        state.append(weather['hourly'][id]['weather'][0]['description'])
+        forecast.append(weather['hourly'][id]['weather'][0]['description'])
     
     # emoji generator
     st = weather['hourly'][id]['weather'][0]['description']
@@ -32,8 +32,8 @@ def get_weather():
     elif st == "slabý déšť":
         emoji = '🌧'
     elif st == 'zataženo':
-        emoji == '☁'
+        emoji = '☁'
     else:
         emoji = '❓'
-
-get_weather()
+    
+    return emoji, date, temp, forecast
