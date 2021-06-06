@@ -33,6 +33,8 @@ def fetch_weather():
         emoji = '🌧'
     elif st == 'zataženo':
         emoji = '☁'
+    elif st == 'oblačno':
+        emoji = '⛅'
     else:
         emoji = '❓'
     
