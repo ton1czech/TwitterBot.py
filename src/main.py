@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 ### IMPORT TASKS ###
 from currencies.main import fetch_currencies
 from history.main import fetch_history
-# from youtube.main import title, link
+from youtube.main import fetch_youtube
 # from weather.main import emoji, date, temp, state
 
 load_dotenv()
@@ -46,7 +46,7 @@ def tweet_history(title, facts):
     sys.exit()
 
 # Latest YouTube video
-def tweet_youtube_video(title, link):
+def tweet_youtube(title, link):
     if title == None or link == None:
         pass
     else:
@@ -58,7 +58,8 @@ def tweet_weather(emoji, date, temp, state):
     if date == None or temp == None or state == None:
         pass
     else:
-        api.update_status(status = f"{date[0]} -> {temp[0]}°C ({state[0]} {emoji})\n{date[3]} -> {temp[3]}°C ({state[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({state[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({state[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({state[15]} {emoji})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+        # api.update_status(status = f"{date[0]} -> {temp[0]}°C ({state[0]} {emoji})\n{date[3]} -> {temp[3]}°C ({state[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({state[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({state[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({state[15]} {emoji})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+        print(f"{date[0]} -> {temp[0]}°C ({state[0]} {emoji})\n{date[3]} -> {temp[3]}°C ({state[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({state[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({state[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({state[15]} {emoji})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
 
@@ -80,8 +81,9 @@ def tweet_weather(emoji, date, temp, state):
 
 # # YouTube
 # @sched.scheduled_job('cron', hour='15')
-# def timed_youtube_video():
-#     tweet_youtube_video(title, link)
+# def schedule_youtube():
+#     title, link = fetch_youtube()
+#     tweet_youtube(title, link)
 
 # # Weather
 # @sched.scheduled_job('cron', hour='5')
