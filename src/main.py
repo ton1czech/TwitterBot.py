@@ -57,7 +57,7 @@ def tweet_weather(emoji, date, temp, state):
     if date == None or temp == None or state == None:
         pass
     else:
-        api.update_status(status = f"{date[0]} -> {temp[0]}°C ({state[0]} {emoji}\n{date[3]} -> {temp[3]}°C ({state[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({state[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({state[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({state[15]} {emoji})")
+        api.update_status(status = f"{date[0]} -> {temp[0]}°C ({state[0]} {emoji})\n{date[3]} -> {temp[3]}°C ({state[3]} {emoji})\n{date[7]} -> {temp[7]}°C ({state[7]} {emoji})\n{date[11]} -> {temp[11]}°C ({state[11]} {emoji})\n{date[15]} -> {temp[15]}°C ({state[15]} {emoji})")
     sys.exit()
 
 ### SCHEDULER ###
