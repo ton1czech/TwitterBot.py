@@ -1,7 +1,6 @@
 ### IMPORT MODULES ###
 import tweepy
 import random
-import time
 import sys
 from apscheduler.schedulers.blocking import BlockingScheduler
 from os import environ
