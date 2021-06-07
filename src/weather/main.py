@@ -17,7 +17,7 @@ def fetch_weather():
     global emoji, date, temp, forecast
     emoji, date, temp, forecast = [], [], [], []
 
-    url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={drop}&units={units}&lang={lang}&appid={environ['API_key']}"
+    url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={drop}&units={units}&lang={lang}&appid={environ['openweathermap_key']}"
     weather = requests.get(url).json()
 
     for id in range(0,20):
