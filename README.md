@@ -2,39 +2,59 @@
 
 ## 💭 **Description**
 
-Python bot to make your Twitter account more active and informative. <br />
-<br />
-Gingy tweets:
-
-<table><tr>
-    <td><h1 style="text-align: center;">currency prices</h1><img alt="Crypto" src="https://i.imgur.com/9Sto0z6.png" width="380px"></td>
-    <td><h1 style="text-align: center;">historical events</h1><img alt="Crypto" src="https://i.imgur.com/u5vkDE2.png" width="380px"></td>
-    <td><h1 style="text-align: center;">new youtube video</h1><img alt="Crypto" src="https://i.imgur.com/u5vkDE2.png" width="380px"></td>
-</tr></table>
+Python bot to make your Twitter account more active and informative.
 
 ---
 
 ## ✏ **How To Use**
 
+```
 Step 1: Clone the repository
-
-```
 $ git clone https://github.com/ton1czech/gingy
-```
 
 Step 2: Install dependancies
-
-```
 $ pip install -r requirements.txt
+
+Step 3: Setup Twitter developer account
+- https://developer.twitter.com/en
+
+Step 4: Setup Heroku account
+- https://heroku.com/
+
+Step 5: Setup OpenWeatherMap account
+- https://openweathermap.org/
+
+Step 6: Make .env file inside root directory and fill out all credentials (like in .env.example)
+
+Step 7: Change YouTube URL to your's channel URL in 'src/youtube/main.py'
+
+Step 8: Host the application on Heroku
+
+Step 9: In Heroku settings add config variables (exactly same as in .env)
 ```
 
-Step 3: Setup [Twitter developer](https://developer.twitter.com/en) account
+---
 
-Step 4: Make .env file inside root dir and fill out Twitter credentials (like in .env.example)
+## 📺 **SHOWCASE**
 
-Step 5: Change YouTube URL to your's channel URL.
+<div align="center" style="margin: 0 0 50px">
+    <h3><strong>Currency prices</strong></h3>
+    <img src="https://i.imgur.com/Lj6K5xZ.jpg" height="500">
+</div>
 
-Step 6: Host the application on Heroku.
+<div align="center" style="margin: 0 0 50px">
+    <h3><strong>History event</strong></h3>
+    <img src="https://i.imgur.com/qLi074P.jpg" height="500">
+</div>
+
+<div align="center" style="margin: 0 0 50px">
+    <h3><strong>YouTube</strong></h3>
+</div>
+
+<div align="center">
+    <h3><strong>Weather</strong></h3>
+    <img src="https://i.imgur.com/GiHPGIo.jpg" height="500">
+</div>
 
 ---
 
