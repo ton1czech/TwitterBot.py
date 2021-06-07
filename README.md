@@ -56,8 +56,16 @@ Step 6: Host the application on Heroku.
 - **25.04.2021** - _preparing to post tweet when I upload video[2]_ - Version: 0.6.2
 - **29.04.2021** - _decide to use selenium for videos (requests remake is possible)[2]_ - Version: 0.6.5
 - **30.03.2021** - _functionality to check if the video is already tweeted[2]_ - Version: 0.6.8
-- **02.05.2021** - _optimizing tweet latest youtube video[2]_
+- **02.05.2021** - _optimizing tweet latest youtube video[2]_ - Version: 0.6.9
 - `02.05.2021 - STABLE RELEASE - Version: 0.7.0`
+- **17.05.2021** - _using Chromedriver instead of geckodriver[2]_ - Version: 0.7.1
+- **04.06.2021** - _deleting Chromedriver and using pytube_[2] - Version: 0.7.4
+- **05.06.2021** - _weather forecast(new module)[3]_ - Version: 0.7.5
+- **05.06.2021** - _custom emoji for every type of weather[3]_ - Version: 0.7.6
+- **05.06.2021** - _simple error handling (if x=None pass)_ - Version: 0.7.8
+- `05.06.2021 - STABLE RELEASE - Version: 0.8.0`
+- **06.06.2021** - _calling functions directly from main file_ - Version: 0.8.5
+- **07.06.2021** - _refactoring code_ - Version: 0.8.9
 
 ---
 
