@@ -1,14 +1,7 @@
-# Import modules
 import pandas_datareader.data as data
 
-# Get real-time prices of currencies
 def fetch_currencies():
-    global prices
-    prices = []
+    currencies = data.get_quote_yahoo(['BTC-USD', 'ETH-USD', 'DOGE-USD', 'CZK=X', 'EURCZK=X'])['price']
+    prices = [format(currency, ",.3f") for currency in currencies]      # store all currencies inside list
 
-    price = data.get_quote_yahoo(['BTC-USD', 'ETH-USD', 'DOGE-USD', 'CZK=X', 'EURCZK=X'])['price']
-    for currency in price:
-        currency = format(currency, ",.3f")
-        prices.append(currency)
-    
     return prices
