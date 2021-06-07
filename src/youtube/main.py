@@ -1,18 +1,12 @@
-# Import modules
-from pytube import YouTube
-from pytube import Channel
+from pytube import YouTube, Channel
 
-# Get title and link of my latest YouTube video
 def fetch_youtube():
-    global title, link
-    title = link = None
-
     channel = Channel('https://www.youtube.com/channel/UCblA_CnykG2Dw_6IMwZ9z9A/videos')
+
     link = channel.video_urls[0]
+    title = YouTube(link).title
 
-    video = YouTube(link)
-    title = video.title
-
+    # try - except just in case I want to run the code locally
     try:
         read_checker = open('src/youtube/checker.txt', 'r')
     except FileNotFoundError:
