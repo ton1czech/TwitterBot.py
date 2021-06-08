@@ -66,12 +66,12 @@ def tweet_weather(emoji, date, temp, forecast):
     sys.exit()
 
 # Sales
-def tweet_sales(titles, prices, stores):
-    if titles == None or prices == None or stores == None:
-        pass
-    else:
-        api.update_status(status = f"Slevy:\n\n{}")
-    sys.exit()
+# def tweet_sales(titles, prices, stores):
+#     if titles == None or prices == None or stores == None:
+#         pass
+#     else:
+#         api.update_status(status = f"Slevy:\n\n{}")
+#     sys.exit()
 
 
 
@@ -103,9 +103,9 @@ def schedule_weather():
     tweet_weather(emoji, date, temp, forecast)
 
 # Sales
-@sched.scheduled_job('cron', hour='17')
-def schedule_sales():
-    titles, prices, stores = fetch_sales()
-    tweet_sales(titles, prices, stores)
+# @sched.scheduled_job('cron', hour='17')
+# def schedule_sales():
+#     titles, prices, stores = fetch_sales()
+#     tweet_sales(titles, prices, stores)
 
 sched.start()
