@@ -15,6 +15,7 @@ from currencies.main import fetch_currencies
 from history.main import fetch_history
 from youtube.main import fetch_youtube
 from weather.main import fetch_weather
+from sales.main import fetch_sales
 
 
 
@@ -64,6 +65,14 @@ def tweet_weather(emoji, date, temp, forecast):
         api.update_status(status = f"KLATOVY:\n\n{date[1]} -> {temp[1]}°C ({forecast[1]} {emoji[1]})\n{date[7]} -> {temp[7]}°C ({forecast[7]} {emoji[7]})\n{date[11]} -> {temp[11]}°C ({forecast[11]} {emoji[11]})\n{date[15]} -> {temp[15]}°C ({forecast[15]} {emoji[15]})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
+# Sales
+def tweet_sales(titles, prices, stores):
+    if titles == None or prices == None or stores == None:
+        pass
+    else:
+        api.update_status(status = f"Slevy:\n\n{}")
+    sys.exit()
+
 
 
 ### SCHEDULER ###
@@ -92,5 +101,11 @@ def schedule_youtube():
 def schedule_weather():
     emoji, date, temp, forecast = fetch_weather()
     tweet_weather(emoji, date, temp, forecast)
+
+# Sales
+@sched.scheduled_job('cron', hour='17')
+def schedule_sales():
+    titles, prices, stores = fetch_sales()
+    tweet_sales(titles, prices, stores)
 
 sched.start()

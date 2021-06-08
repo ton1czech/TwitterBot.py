@@ -24,6 +24,6 @@ def fetch_sales():
         store = store.find('span', class_="value").text
         stores.append(store)
 
-    print(titles, prices, stores)
+    return titles, prices, stores
 
 fetch_sales()
