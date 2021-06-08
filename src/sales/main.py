@@ -23,6 +23,11 @@ def fetch_sales():
         store = game.find('div', class_="tag-shop ellipsis tag with-bull")
         store = store.find('span', class_="value").text
         stores.append(store)
+    
+        if prices[id] != "Free":
+            prices[id] = None
+        
+        print(prices)
 
     return titles, prices, stores
 
