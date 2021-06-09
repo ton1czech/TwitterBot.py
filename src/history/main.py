@@ -5,9 +5,7 @@ from bs4 import BeautifulSoup
 def fetch_history():
     facts = []
 
-    url = 'https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana'
-
-    soup = BeautifulSoup(requests.get(url).text, 'lxml')
+    soup = BeautifulSoup(requests.get('https://wikipedia.cz').text, 'lxml')
 
     table = soup.find('div', class_ = 'mainpage-block calendar-container')
     title = table.find('div', class_ = 'mainpage-headline').text
