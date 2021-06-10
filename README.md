@@ -1,4 +1,4 @@
-# 🎂 gingy 🎂 [<img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg">](https://mit-license.org/) [<img alt="Python Version" src="https://img.shields.io/pypi/pyversions/pytube">](https://www.python.org/)
+# 🎂 gingy 🎂 ![License](https://img.shields.io/github/license/ton1czech/gingy.svg) ![Python](https://badgen.net/badge/Python/3.9.5/blue?) ![Size](https://img.shields.io/github/languages/code-size/ton1czech/gingy.svg) ![GitHub version](https://badge.fury.io/gh/ton1czech%2Fgingy.svg)
 
 ## 💭 **Description**
 
