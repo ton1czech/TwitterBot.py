@@ -5,5 +5,3 @@ def fetch_covid19():
     today_cases, today_recovered, today_deaths = r["todayCases"], r["todayRecovered"], r["todayDeaths"]
 
     return today_cases, today_recovered, today_deaths
-
-fetch_covid19()
