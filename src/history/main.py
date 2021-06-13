@@ -12,8 +12,7 @@ def fetch_history():
     events = table.find('ul').text
     events = events.splitlines()
     for event in events:
-        event = re.sub('\(.+\)', '', event)
-        event = re.sub('\s\.', '.', event)
+        event = re.sub('\s\(.+\)', '', event)
         facts.append(event)
 
     return title, facts
