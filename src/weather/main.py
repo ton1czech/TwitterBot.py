@@ -31,6 +31,10 @@ def fetch_weather():
             emoji.append('☁')
         elif forecast[id] == 'oblačno':
             emoji.append('⛅')
+        elif forecast[id] == 'jasno':
+            emoji.append('☀')
+        elif forecast[id] == 'polojasno':
+            emoji.append('🌤')
         else:
             emoji.append('❓')
     
