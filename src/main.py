@@ -6,11 +6,6 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 from os import environ
 from dotenv import load_dotenv
 
-load_dotenv()
-
-
-
-### IMPORT TASKS ###
 from currencies.main import fetch_currencies
 from history.main import fetch_history
 from youtube.main import fetch_youtube
@@ -30,38 +25,41 @@ api = tweepy.API(auth)
 
 
 
+### CHECK FOR NONE IN DATA ###
+def check(*args):
+    for arg in args:
+        if arg == None:
+            sys.exit()
+        if isinstance(arg, list) and None in arg:
+            sys.exit()
+        else:
+            return args
+
+
+
 ### ACTUAL TWEETS ###
 # Currencies
 def tweet_currencies(prices):
-    if prices == None:
-        pass
-    else:
-        api.update_status(status = f"Bitcoin: ${prices[0]}    #bitcoin\nEthereum: ${prices[1]}    #ethereum\nDogecoin: ${prices[2]}    #dogecoin\n\n$ Dollar: {prices[3]} Kč    #dollar\n€ Euro: {prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+    c_prices = check(prices)[0]
+    api.update_status(status = f"Bitcoin: ${c_prices[0]}    #bitcoin\nEthereum: ${c_prices[1]}    #ethereum\nDogecoin: ${c_prices[2]}    #dogecoin\n\n$ Dollar: {c_prices[3]} Kč    #dollar\n€ Euro: {c_prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
 # History
 def tweet_history(title, facts):
-    if title == None or facts == None:
-        pass
-    else:
-        fact = random.choice(facts)
-        api.update_status(status = f"{title}\n\n{fact}\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nzdroj: https://wikipedia.cz\nsource code: https://github.com/ton1czech/gingy")
+    c_title, c_fact = check(title)[0], random.choice(check(facts)[0])
+    api.update_status(status = f"{c_title}\n\n{c_fact}\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nzdroj: https://wikipedia.cz\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
-# Latest YouTube video
+# YouTube 
 def tweet_youtube(title, link):
-    if title == None or link == None:
-        pass
-    else:
-        api.update_status(status = f"Nové video na YouTube! 😍\n\n{title}\n{link}\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+    c_title, c_link = check(title)[0], check(link)[0]
+    api.update_status(status = f"Nové video na YouTube! 😍\n\n{c_title}\n{c_link}\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
 # Weather
 def tweet_weather(emoji, date, temp, forecast):
-    if date == None or temp == None or forecast == None:
-        pass
-    else:
-        api.update_status(status = f"KLATOVY:\n\n{date[1]} -> {temp[1]}°C ({forecast[1]} {emoji[1]})\n{date[7]} -> {temp[7]}°C ({forecast[7]} {emoji[7]})\n{date[11]} -> {temp[11]}°C ({forecast[11]} {emoji[11]})\n{date[15]} -> {temp[15]}°C ({forecast[15]} {emoji[15]})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
+    c_emoji, c_date, c_temp, c_forecast = check(emoji)[0], check(date)[0], check(temp)[0], check(forecast)[0]
+    api.update_status(status = f"KLATOVY:\n\n{c_date[1]} -> {c_temp[1]}°C ({c_forecast[1]} {c_emoji[1]})\n{c_date[7]} -> {c_temp[7]}°C ({c_forecast[7]} {c_emoji[7]})\n{c_date[11]} -> {c_temp[11]}°C ({c_forecast[11]} {c_emoji[11]})\n{c_date[15]} -> {c_temp[15]}°C ({c_forecast[15]} {c_emoji[15]})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
 
 
