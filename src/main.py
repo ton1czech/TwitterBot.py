@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 from currencies.main import fetch_currencies
 from history_fact.main import fetch_history_fact
-from youtube.main import fetch_youtube
+from latest_youtube_vid.main import fetch_latest_youtube_vid
 from weather.main import fetch_weather
 
 
@@ -51,7 +51,7 @@ def tweet_history_fact(title, facts):
     sys.exit()
 
 # YouTube 
-def tweet_youtube(title, link):
+def tweet_latest_youtube_vid(title, link):
     c_title, c_link = check(title)[0], check(link)[0]
     api.update_status(status = f"Nové video na YouTube! 😍\n\n{c_title}\n{c_link}\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
@@ -82,8 +82,8 @@ def schedule_history_fact():
 # YouTube
 @sched.scheduled_job('cron', hour='15')
 def schedule_youtube():
-    title, link = fetch_youtube()
-    tweet_youtube(title, link)
+    title, link = fetch_latest_youtube_vid()
+    tweet_latest_youtube_vid(title, link)
 
 # Weather
 @sched.scheduled_job('cron', hour='5')
