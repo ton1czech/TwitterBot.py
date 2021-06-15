@@ -7,7 +7,7 @@ from os import environ
 from dotenv import load_dotenv
 
 from currencies.main import fetch_currencies
-from history.main import fetch_history
+from history_fact.main import fetch_history_fact
 from youtube.main import fetch_youtube
 from weather.main import fetch_weather
 
@@ -45,7 +45,7 @@ def tweet_currencies(prices):
     sys.exit()
 
 # History
-def tweet_history(title, facts):
+def tweet_history_fact(title, facts):
     c_title, c_fact = check(title)[0], random.choice(check(facts)[0])
     api.update_status(status = f"{c_title}\n\n{c_fact}\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nzdroj: https://wikipedia.cz\nsource code: https://github.com/ton1czech/gingy")
     sys.exit()
@@ -75,9 +75,9 @@ def schedule_currencies():
 
 # History
 @sched.scheduled_job('cron', hour='20')
-def schedule_history():
-    title, facts = fetch_history()
-    tweet_history(title, facts)
+def schedule_history_fact():
+    title, facts = fetch_history_fact()
+    tweet_history_fact(title, facts)
 
 # YouTube
 @sched.scheduled_job('cron', hour='15')
