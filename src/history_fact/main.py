@@ -2,7 +2,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-def fetch_history():
+def fetch_history_fact():
     facts = []
 
     soup = BeautifulSoup(requests.get('https://wikipedia.cz').text, 'lxml')
