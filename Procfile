@@ -1,1 +1,1 @@
-borec: python src/main.py
+borec: python src/gingy.py
