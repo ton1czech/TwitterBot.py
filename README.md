@@ -21,25 +21,28 @@ What can gingy tweets:
 Step 1: Clone the repository
 $ git clone https://github.com/ton1czech/gingy
 
-Step 2: Install dependancies
+Step 2: CD into cloned repository
+$ cd gingy/
+
+Step 3: Install dependancies
 $ pip install -r requirements.txt
 
-Step 3: Setup Twitter developer account
+Step 4: Setup Twitter developer account
 - https://developer.twitter.com/en
 
-Step 4: Setup Heroku account
+Step 5: Setup Heroku account
 - https://heroku.com/
 
-Step 5: Setup OpenWeatherMap account
+Step 6: Setup OpenWeatherMap account (if you want to tweet weather forecast)
 - https://openweathermap.org/
 
-Step 6: Make .env file inside root directory and fill out all credentials (like in .env.example)
+Step 7: Make .env file inside root directory and fill out all credentials (like in .env.example)
 
-Step 7: Change YouTube URL to your's channel URL in 'src/youtube/main.py'
+Step 8: Change YouTube URL to your's channel URL in 'src/youtube/main.py'
 
-Step 8: Host the application on Heroku
+Step 9: Host the application on Heroku
 
-Step 9: In Heroku settings add config variables (exactly same as in .env)
+Step 10: Add heroku config variables (exactly same as in .env) and dont forget to specify your timezone (TZ=Europe/Prague)
 ```
 
 ---
