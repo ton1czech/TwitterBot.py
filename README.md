@@ -58,37 +58,6 @@ Step 9: In Heroku settings add config variables (exactly same as in .env)
 
 ---
 
-## 📜 **LOG**
-
-- **17.04.2021** - _first line_ - Version: 0.1.0
-- **18.04.2021** - _format prices[0]_ - Version: 0.2.0
-- **18.04.2021** - _scheduling via schedule module_ - Version: 0.2.5
-- **18.04.2021** - _added Heroku files_ - Version: 0.3.0
-- **18.04.2021** - _moved from schedule to apscheduler_ - Version: 0.3.5
-- **18.04.2021** - _added thousand separator for prices[0]_ - Version: 0.3.8
-- **18.04.2021** - _removed unnecessary lines_ - Version: 0.4.0
-- **21.04.2021** - _making this project multifile_ - Version: 0.5.0
-- `21.04.2021 - STABLE RELEASE - Version: 0.5.0`
-- **21.04.2021** - _added historical facts[1]_ - Version: 0.5.5
-- **22.04.2021** - _historical facts 100% functional[1]_ - Version: 0.5.8
-- `22.04.2021 - STABLE RELEASE - Version: 0.6.0`
-- **24.04.2021** - _improvements on historical facts[1]_ - Version: 0.6.1
-- **25.04.2021** - _preparing to post tweet when I upload video[2]_ - Version: 0.6.2
-- **29.04.2021** - _decide to use selenium for videos (requests remake is possible)[2]_ - Version: 0.6.5
-- **30.03.2021** - _functionality to check if the video is already tweeted[2]_ - Version: 0.6.8
-- **02.05.2021** - _optimizing tweet latest youtube video[2]_ - Version: 0.6.9
-- `02.05.2021 - STABLE RELEASE - Version: 0.7.0`
-- **17.05.2021** - _using Chromedriver instead of geckodriver[2]_ - Version: 0.7.1
-- **04.06.2021** - _deleting Chromedriver and using pytube_[2] - Version: 0.7.4
-- **05.06.2021** - _weather forecast(new module)[3]_ - Version: 0.7.5
-- **05.06.2021** - _custom emoji for every type of weather[3]_ - Version: 0.7.6
-- **05.06.2021** - _simple error handling (if x=None pass)_ - Version: 0.7.8
-- `05.06.2021 - STABLE RELEASE - Version: 0.8.0`
-- **06.06.2021** - _calling functions directly from main file_ - Version: 0.8.5
-- **07.06.2021** - _refactoring code_ - Version: 0.8.9
-
----
-
 ## 📎 **License**
 
 MIT License
