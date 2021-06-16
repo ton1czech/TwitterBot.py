@@ -2,7 +2,16 @@
 
 ## 💭 **Description**
 
-Python bot to make your Twitter account more active and informative.
+Python bot to make your Twitter account more active and informative. </br>
+</br>
+What can gingy tweets:
+
+- Cryptocurrency and currency prices
+- History event
+- Latest YouTube video
+- Weather forecast
+- Game sales
+- COVID-19 Cases, Recovered and Deaths
 
 ---
 
