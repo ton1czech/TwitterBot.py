@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def fetch_sales():
+def fetch_game_sales():
     games = [[],[],[]]
 
     soup = BeautifulSoup(requests.get('https://gg.deals').text, 'lxml')
