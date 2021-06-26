@@ -27,6 +27,8 @@ def fetch_weather():
             emoji.append('☔')
         elif forecast[id] == "slabý déšť":
             emoji.append('🌧')
+        elif forecast[id] == "prudký déšť":
+            emoji.append('💦')
         elif forecast[id] == "zataženo":
             emoji.append('☁')
         elif forecast[id] == "oblačno":
