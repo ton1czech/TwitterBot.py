@@ -1,0 +1,20 @@
+Currencies:
+f"Bitcoin: ${c_prices[0]}    #bitcoin\nEthereum: ${c_prices[1]}    #ethereum\nDogecoin: ${c_prices[2]}    #dogecoin\n\n$ Dollar: {c_prices[3]} Kč    #dollar\n€ Euro: {c_prices[4]} Kč    #euro\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy"
+
+History fact:
+f"{c_title}\n\n{c_fact}\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nzdroj: https://wikipedia.cz\nsource code: https://github.com/ton1czech/gingy"
+
+Latest YouTube video:
+f"Nové video na YouTube! 😍\n\n{c_title}\n{c_link}\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy"
+
+Weather forecast:
+f"KLATOVY:\n\n{c_date[1]} -> {c_temp[1]}°C ({c_forecast[1]} {c_emoji[1]})\n{c_date[7]} -> {c_temp[7]}°C ({c_forecast[7]} {c_emoji[7]})\n{c_date[11]} -> {c_temp[11]}°C ({c_forecast[11]} {c_emoji[11]})\n{c_date[15]} -> {c_temp[15]}°C ({c_forecast[15]} {c_emoji[15]})\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\nsource code: https://github.com/ton1czech/gingy"
+
+Game sales:
+f""
+
+Covid-19:
+f"Dnešní nové případy: {c_today_cases}\nDnešní počet uzdravení: {c_today_recovered}\nDnešní počet úmrtí: {c_today_deaths}\n\n\nzdroj: https://disease.sh/docs\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nsource code: https://github.com/ton1czech/gingy"
+
+Nameday:
+f"Dnes má svátek {c_name}\n\nZdroj: https://svatky.adresa.info/\n\n\nTweet odeslal gingy, zabiják naprogramovanej borcem Danečkem ❤\n\nsource code: https://github.com/ton1czech/gingy"
