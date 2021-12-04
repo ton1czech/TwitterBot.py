@@ -12,6 +12,7 @@ What can gingy tweets:
 - Weather forecast
 - Game sales
 - COVID-19 Cases, Recovered and Deaths
+- Namedays
 
 ---
 
@@ -47,7 +48,7 @@ openweathermap_key="abc123"
 
 # Step 9: Host the application on Heroku
 
-# Step 10: Add heroku config variables (exactly same as in .env) and dont forget to specify your timezone (TZ=Continent/City)
+# Step 10: Add heroku config variables (exactly same as in .env.example) and dont forget to specify your timezone (TZ=Continent/City)
 consumer_key - abc123
 consumer_secret - abc123
 access_token - abc123
@@ -55,29 +56,6 @@ access_token_secret - abc123
 openweathermap_key - abc123
 TZ - Europe/Prague
 ```
-
----
-
-## 📺 **SHOWCASE**
-
-<div align="center" style="margin: 0 0 50px">
-    <h3><strong>Currency prices</strong></h3>
-    <img src="https://i.imgur.com/Lj6K5xZ.jpg" height="500">
-</div>
-
-<div align="center" style="margin: 0 0 50px">
-    <h3><strong>History event</strong></h3>
-    <img src="https://i.imgur.com/qLi074P.jpg" height="500">
-</div>
-
-<div align="center" style="margin: 0 0 50px">
-    <h3><strong>YouTube</strong></h3>
-</div>
-
-<div align="center">
-    <h3><strong>Weather</strong></h3>
-    <img src="https://i.imgur.com/GiHPGIo.jpg" height="500">
-</div>
 
 ---
 
@@ -98,4 +76,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## 👨‍💻 **Author Info**
 
 - Twitter - [@ton1czech](https://twitter.com/ton1czech)
+- YouTube - [@ton1czech](https://www.youtube.com/channel/UCblA_CnykG2Dw_6IMwZ9z9A)
 - Instagram - [@ton1czech](https://instagram.com/ton1czech)
+- Reddit - [@ton1czech](https://reddit.com/user/ton1czech)
+- TikTok - [@t0n1czech](https://www.tiktok.com/@t0n1czech)
+- GitLab - [@ton1czech](https://gitlab/ton1czech)
+- Dribbble - [@ton1czech](https://dribbble.com/ton1czech)
